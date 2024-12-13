@@ -2,7 +2,8 @@
 
 Project Description
 ===================
-This Bash script automates the installation and configuration of MongoDB on a Rocky Linux system. It sets up a replica set and creates an administrative user to access MongoDB.
+This Bash script automates the installation and configuration of MongoDB on a Rocky Linux system.
+It sets up a replica set and creates an administrative user to access MongoDB.
 
 Key Features
 ============
@@ -23,17 +24,24 @@ Admin User Creation: The script creates an admin user with root privileges in th
 Prerequisites
 =============
 Rocky Linux (or other RHEL-based distributions)
+
 dnf as the package manager
+
 Sudo access for installation and configuration
 
 Usage Instructions
 ==================
 Create the script:
   nano installmongo.sh
+
 Paste the content of the script into the file.
+
 Make the script executable:
+
   chmod +x installmongo.sh
+
 Run the script:
+
   ./installmongo.sh
 
 This script is intended for use in test or development environments. Modifications may be required for production environments, such as secure password management or advanced security configurations.
