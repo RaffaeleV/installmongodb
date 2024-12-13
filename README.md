@@ -7,11 +7,17 @@ This Bash script automates the installation and configuration of MongoDB on a Ro
 Key Features
 ============
 MongoDB Installation: The script adds the MongoDB repository and installs MongoDB version 8.0 using the dnf package manager.
+
 Firewall Configuration: It adds a firewall rule to allow traffic on MongoDB's default TCP port (27017).
+
 MongoDB Service Setup: It enables and starts the MongoDB service using systemctl.
+
 Replica Set Configuration: It modifies the mongod.conf configuration file to enable the replica set, setting the replica set name (default is rs0).
+
 Bind IP Configuration: The script configures MongoDB to accept connections from a specified IP address.
+
 Replica Set Initialization: It initializes the replica set using the rs.initiate() command in MongoDB.
+
 Admin User Creation: The script creates an admin user with root privileges in the admin database.
 
 Prerequisites
